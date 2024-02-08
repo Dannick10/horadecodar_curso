@@ -1,5 +1,6 @@
 
 import './App.css'
+import spide from "../public/spideman.png"
 
 function App() {
  
@@ -11,6 +12,10 @@ function App() {
         <span>SPIDE</span>
         <span>MAN</span>
         <img src="/spideman.png" alt="" />
+      </div>
+
+      <div>
+        <img style={{transform:"scaleY(-1)", opacity: "0.2"}} src={spide} alt="" />
       </div>
     </>
   )
