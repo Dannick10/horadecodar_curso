@@ -10,9 +10,20 @@ import './App.css'
 
 function App() {
 
+  //comentarios
+
+  /*
+  Multi line
+  */ 
+
   return (
     <>
+{ /*
      <PrimeiroComponente/>
+     <SegundoCompoente/>
+  */  }
+
+      <PrimeiroComponente/>
      <SegundoCompoente/>
     </>
   )
