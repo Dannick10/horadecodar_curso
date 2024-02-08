@@ -8,6 +8,7 @@ import Template from './components/Template'
 //styles / css
 
 import './App.css'
+import Maincomponent from './components/Maincompnet'
 
 function App() {
 
@@ -27,6 +28,7 @@ function App() {
       <PrimeiroComponente/>
      <SegundoCompoente/>
      <Template/>
+     <Maincomponent/>
     </>
   )
 }

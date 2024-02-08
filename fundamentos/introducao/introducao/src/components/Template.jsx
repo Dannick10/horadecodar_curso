@@ -8,6 +8,7 @@ const Template = () =>{
 
     return(
         <div>
+            <hr></hr>
             <h1>Olá {name},tudo bem ?</h1>
             <p>Sua idade é {data.age}</p>
             <p>Voçê atua como ? {data.job}</p>
