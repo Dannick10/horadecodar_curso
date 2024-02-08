@@ -3,6 +3,7 @@
 //Components
 import PrimeiroComponente from './components/primeirocomponente'
 import SegundoCompoente from './components/SegundoComponente'
+import Template from './components/Template'
 
 //styles / css
 
@@ -25,6 +26,7 @@ function App() {
 
       <PrimeiroComponente/>
      <SegundoCompoente/>
+     <Template/>
     </>
   )
 }
