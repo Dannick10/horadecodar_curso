@@ -4,6 +4,8 @@
 import PrimeiroComponente from './components/primeirocomponente'
 import SegundoCompoente from './components/SegundoComponente'
 import Template from './components/Template'
+import Event from './components/Event'
+
 
 //styles / css
 
@@ -23,12 +25,17 @@ function App() {
 { /*
      <PrimeiroComponente/>
      <SegundoCompoente/>
-  */  }
+  
 
       <PrimeiroComponente/>
      <SegundoCompoente/>
      <Template/>
-     <Maincomponent/>
+  <Maincomponent/> */ }
+
+
+  <Event/>
+
+
     </>
   )
 }
