@@ -4,7 +4,8 @@ import './App.css'
 
 //components
 import ManageData from './components/ManageData'
-
+import ListRender from './components/ListRender'
+import FilmRender from './components/FilmRender'
 
 function App() {
  
@@ -20,6 +21,14 @@ function App() {
 
       <div>
         <ManageData/>
+      </div>
+
+      <div>
+        <ListRender/>
+      </div>
+      
+      <div>
+        <FilmRender/>
       </div>
 
     </>
