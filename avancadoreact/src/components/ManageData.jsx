@@ -13,7 +13,7 @@ const ManageData=()=>{
             </div>
                 <button onClick={()=>{somedata = 15}}>Mudar valor</button>
 
-                <button onClick={()=>{setnumber('OIIII')}}>States</button>
+                <button onClick={()=>{setnumber(5)}}>States</button>
                 <div>UseStates
                     <p>{number}</p>
                 </div>

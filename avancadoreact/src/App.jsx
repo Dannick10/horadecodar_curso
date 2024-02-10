@@ -1,4 +1,4 @@
-
+import { useState } from 'react'
 import './App.css'
 
 
@@ -7,9 +7,13 @@ import ManageData from './components/ManageData'
 import ListRender from './components/ListRender'
 import FilmRender from './components/FilmRender'
 import Condicional from './components/Condicional'
+import ShowUseName from './components/ShowUseName'
 
 function App() {
- 
+
+  const name = 'Dandanzinho'
+  const [useNam,setuseNam] = useState('Mycaela')
+
   return (
     <>
       <h3>Avançado REact</h3>
@@ -19,14 +23,10 @@ function App() {
         <span>MAN</span>
         <img src="/spideman.png" alt="" />
       </div>  
-
-      <div>
      <ListRender/>
-      </div>
-
-      <div>
     <Condicional/>
-      </div>
+    <ShowUseName name={useNam}/>
+    <button onClick={()=>{setuseNam('Mycaela e daniel')}}>Clique</button>
 
     </>
   )
