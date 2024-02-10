@@ -1,31 +1,32 @@
 import { useState } from "react"
 
 const ListRender = () =>{
-    const p = ['daniel','fabricio','paulo','ricardo']
-    const [list] = useState(p)
 
-    const [users] = useState([
-        {id: 1, name:'Daniel', age: 24},
-        {id: 2, name: 'Mycaela', age: 24}
+   const [users,setUsers] = useState([
+        {id: 1, name: 'daniel'},
+        {id: 2, name: 'Mycaela'},
     ])
 
+    const deleterandom =()=>{
+        const number = Math.round(Math.random()* users.length) + 1
+        console.log(number)
+
+        setUsers((prevUsers)=>{
+            return prevUsers.filter((user) => number !== user.id)
+        })
+    }
     return(
         <div>
             <ul>
-                {list.map((item,i) => (
-                    <li>{item}</li>
-                ))}
-            </ul>
-
-            <ul>
-                {users.map((user) =>(
+                {users.map((users,i)=>(
                     <li>
-                        key={user.id} |
-                        {user.name} |
-                        {user.age}
+                        key={users.id}
+                        {users.name}
                     </li>
                 ))}
             </ul>
+
+            <button onClick={deleterandom}>Delete users</button>
 
         </div>
     )

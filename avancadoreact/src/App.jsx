@@ -20,15 +20,7 @@ function App() {
       </div>  
 
       <div>
-        <ManageData/>
-      </div>
-
-      <div>
-        <ListRender/>
-      </div>
-      
-      <div>
-        <FilmRender/>
+     <ListRender/>
       </div>
 
     </>
