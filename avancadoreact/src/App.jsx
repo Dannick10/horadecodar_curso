@@ -8,7 +8,7 @@ import ListRender from './components/ListRender'
 import FilmRender from './components/FilmRender'
 import Condicional from './components/Condicional'
 import ShowUseName from './components/ShowUseName'
-
+import CardDetails from './components/CardDetails'
 function App() {
 
   const name = 'Dandanzinho'
@@ -28,6 +28,7 @@ function App() {
     <ShowUseName name={useNam}/>
     <button onClick={()=>{setuseNam('Mycaela e daniel')}}>Clique</button>
 
+    <CardDetails brand='vw' km={100} color='azul'/>
     </>
   )
 }
