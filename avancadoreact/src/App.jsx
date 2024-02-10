@@ -6,6 +6,7 @@ import './App.css'
 import ManageData from './components/ManageData'
 import ListRender from './components/ListRender'
 import FilmRender from './components/FilmRender'
+import Condicional from './components/Condicional'
 
 function App() {
  
@@ -21,6 +22,10 @@ function App() {
 
       <div>
      <ListRender/>
+      </div>
+
+      <div>
+    <Condicional/>
       </div>
 
     </>
