@@ -23,12 +23,15 @@ function App() {
         <span>MAN</span>
         <img src="/spideman.png" alt="" />
       </div>  
+      <ManageData/>
      <ListRender/>
     <Condicional/>
     <ShowUseName name={useNam}/>
     <button onClick={()=>{setuseNam('Mycaela e daniel')}}>Clique</button>
 
     <CardDetails brand='vw' km={100} color='azul'/>
+    <CardDetails brand='fiat' km={150} color='vermelho'/>
+    <CardDetails brand='mustang' km={0} color='branco' newCar={true}/>
     </>
   )
 }
