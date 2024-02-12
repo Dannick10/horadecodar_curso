@@ -9,6 +9,8 @@ import FilmRender from './components/FilmRender'
 import Condicional from './components/Condicional'
 import ShowUseName from './components/ShowUseName'
 import CardDetails from './components/CardDetails'
+import Fragments from './components/Fragments'
+
 function App() {
 
   const name = 'Dandanzinho'
@@ -32,6 +34,8 @@ function App() {
     <CardDetails brand='vw' km={100} color='azul'/>
     <CardDetails brand='fiat' km={150} color='vermelho'/>
     <CardDetails brand='mustang' km={0} color='branco' newCar={true}/>
+
+    <Fragments propFragments='teste'/>
     </>
   )
 }
