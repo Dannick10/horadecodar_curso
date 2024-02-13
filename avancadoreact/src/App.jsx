@@ -10,6 +10,7 @@ import Condicional from './components/Condicional'
 import ShowUseName from './components/ShowUseName'
 import CardDetails from './components/CardDetails'
 import Fragments from './components/Fragments'
+import Container from './components/container'
 
 function App() {
 
@@ -36,6 +37,12 @@ function App() {
     <CardDetails brand='mustang' km={0} color='branco' newCar={true}/>
 
     <Fragments propFragments='teste'/>
+
+    <Container>
+      <h2>SUB TITULO COM CHILDREN</h2>
+      <h3>FUNCIONA</h3>
+    </Container>
+
     </>
   )
 }
