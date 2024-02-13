@@ -11,11 +11,16 @@ import ShowUseName from './components/ShowUseName'
 import CardDetails from './components/CardDetails'
 import Fragments from './components/Fragments'
 import Container from './components/container'
+import Execution from './components/Execution'
 
 function App() {
 
   const name = 'Dandanzinho'
   const [useNam,setuseNam] = useState('Mycaela')
+
+  function showMessage(){
+     console.log('Evento no componente pai')
+  }
 
   return (
     <>
@@ -43,6 +48,7 @@ function App() {
       <h3>FUNCIONA</h3>
     </Container>
 
+    <Execution myfunction={showMessage}/>
     </>
   )
 }
