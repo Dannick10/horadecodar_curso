@@ -14,7 +14,8 @@ import Container from './components/container'
 import Execution from './components/Execution'
 import Message from './components/Message'
 import Change from './components/Change'
-
+import MessageState from './components/MessageState'
+import ChangeMEssageState from './components/ChangeMEssageState'
 function App() {
 
   const name = 'Dandanzinho'
@@ -26,6 +27,12 @@ function App() {
     setmessage(msg)
   }
 
+  const [messagestate,setMessagestate] = useState('')
+
+  const handleMessageState=(msg)=>{
+    return setMessagestate(msg)
+  }
+
   function showMessage(){
      console.log('Evento no componente pai')
   }
@@ -33,8 +40,8 @@ function App() {
   return (
     <>
       <h3>Avançado REact</h3>
-      <Message msg={messagee}/>
-    <Change handleMessage={handleMessage}/>
+      <MessageState msg={messagestate}/>
+      <ChangeMEssageState handleMessageState={handleMessageState}/>
     </>
   )
 }
