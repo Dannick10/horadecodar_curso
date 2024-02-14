@@ -12,11 +12,19 @@ import CardDetails from './components/CardDetails'
 import Fragments from './components/Fragments'
 import Container from './components/container'
 import Execution from './components/Execution'
+import Message from './components/Message'
+import Change from './components/Change'
 
 function App() {
 
   const name = 'Dandanzinho'
   const [useNam,setuseNam] = useState('Mycaela')
+
+  const [messagee, setmessagee] = useState('')
+
+  const handleMessage = (msg) =>{
+    setmessage(msg)
+  }
 
   function showMessage(){
      console.log('Evento no componente pai')
@@ -25,30 +33,8 @@ function App() {
   return (
     <>
       <h3>Avançado REact</h3>
-
-      <div className='spide-home'>
-        <span>SPIDE</span>
-        <span>MAN</span>
-        <img src="/spideman.png" alt="" />
-      </div>  
-      <ManageData/>
-     <ListRender/>
-    <Condicional/>
-    <ShowUseName name={useNam}/>
-    <button onClick={()=>{setuseNam('Mycaela e daniel')}}>Clique</button>
-
-    <CardDetails brand='vw' km={100} color='azul'/>
-    <CardDetails brand='fiat' km={150} color='vermelho'/>
-    <CardDetails brand='mustang' km={0} color='branco' newCar={true}/>
-
-    <Fragments propFragments='teste'/>
-
-    <Container>
-      <h2>SUB TITULO COM CHILDREN</h2>
-      <h3>FUNCIONA</h3>
-    </Container>
-
-    <Execution myfunction={showMessage}/>
+      <Message msg={messagee}/>
+    <Change handleMessage={handleMessage}/>
     </>
   )
 }
