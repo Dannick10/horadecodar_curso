@@ -16,12 +16,21 @@ import Message from './components/Message'
 import Change from './components/Change'
 import MessageState from './components/MessageState'
 import ChangeMEssageState from './components/ChangeMEssageState'
+import FilmState from './components/FilmState'
+import ChangeFilm from './components/ChangeFilm' 
+
 function App() {
 
   const name = 'Dandanzinho'
   const [useNam,setuseNam] = useState('Mycaela')
 
   const [messagee, setmessagee] = useState('')
+
+  const [film,setFilm] = useState('')
+
+  const handleFilm = (film) =>{
+     setFilm(film)
+  }
 
   const handleMessage = (msg) =>{
     setmessage(msg)
@@ -40,8 +49,14 @@ function App() {
   return (
     <>
       <h3>Avançado REact</h3>
+
+      
       <MessageState msg={messagestate}/>
       <ChangeMEssageState handleMessageState={handleMessageState}/>
+
+      <FilmState film={film}/>
+      <ChangeFilm handleFilm={handleFilm}/>
+      
     </>
   )
 }
