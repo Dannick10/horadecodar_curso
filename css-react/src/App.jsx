@@ -5,6 +5,7 @@ import './App.css'
 
 //components
 import Mycomponent from './components/Mycomponent'
+import Tilt from './components/Tilt'
 
 function App() {
 
@@ -30,7 +31,8 @@ const [name] = useState('DANIEL')
 
           <h2 className={redtitle?'red-title':'title'}> Este TITULO TEM CLASSE DINAMICA</h2>
           <button onClick={()=>setredtitle(true)}>Mudar cor</button>
-
+          {/*CSS modules*/}
+     <Tilt/>
       </div>
     </>
   )
