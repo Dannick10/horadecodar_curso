@@ -13,7 +13,7 @@ function App() {
     <h1>React com css</h1>
 
     <Mycomponent/>
-    <p >Esse paragrafo e do app.js</p>
+    <p style={{padding:'10px', width: '300px', margin: 'auto'}}>Esse paragrafo e do app.js</p>
       </div>
     </>
   )
