@@ -8,3 +8,12 @@ h1{
   color: red;
   text-align: center;
 }
+
+.title{
+  color: white;
+  background-color: burlywood;
+}
+
+.red-title{
+  background-color: brown;
+}
