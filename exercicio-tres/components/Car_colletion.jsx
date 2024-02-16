@@ -14,28 +14,28 @@ function Car_colletion() {
         desconto: 0
         },
         {
-            id: 2,
-            name:'CAMARO',
-            marca: 'Chevrolet',
-            cor: 'cor',
-            preco: 340.000,
-            desconto: 50
+         id: 2,
+         name:'CAMARO',
+         marca: 'Chevrolet',
+         cor: 'cor',
+        preco: 340.000,
+        desconto: 50
             },
             {
-                id: 3,
-                name:'HILUX',
-                marca: 'Chevrolet',
-                cor: 'cor',
-                preco: 120.000,
-                desconto: 15
+          id: 3,
+         name:'HILUX',
+         marca: 'Chevrolet',
+         cor: 'cor',
+          preco: 120.000,
+         desconto: 15
                 },
                 {
-                    id: 3,
-                    name:'bmw_rx8',
-                    marca: 'bmw',
-                    cor: 'preto',
+             id: 3,
+             name:'bmw_rx8',
+             marca: 'bmw',
+            cor: 'preto',
                     preco: 950.000,
-                    desconto: 0
+             desconto: 0
                     },
                     {
                         id: 4,

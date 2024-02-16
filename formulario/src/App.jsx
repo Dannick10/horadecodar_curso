@@ -11,7 +11,7 @@ function App() {
   return (
     <>
       <h2>Forms</h2>
-      <MyForms/>
+      <MyForms user={{name:'Daniel',email:'danmaggot2@gmail.com'}}/>
 
       <h2>Treino</h2>
       <Treinar/>
