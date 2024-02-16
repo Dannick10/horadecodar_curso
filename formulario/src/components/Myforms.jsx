@@ -1,16 +1,27 @@
 
+import { useState } from 'react'
 import './Myforms.css'
 
 const MyForms = () =>{
+    //3 geraciar dados
+    const [name,setName] = useState()
+    const [mall,setMall] = useState()
+
+    const handleName = (e)=>{
+      setName(e.target.value)
+    }
+
+    console.log(name)
+    
     return(
         <div>
                 {/*Criaçao de form*/ }
                 <form>
                     <div>
                         <label htmlFor="name">nome</label>
-                        <input type="text" name="name" placeholder="digite seu nome" />
+                        <input type="text" name="name" placeholder="digite seu nome" onChange={handleName}/>
                     </div>
-                    
+
                 {/*label envolvendo input*/}
                 <label htmlFor="email">
                     <span>E-mall</span>
