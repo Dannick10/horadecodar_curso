@@ -10,9 +10,14 @@ const Treinar = () =>{
         setNumber(e.target.value)
     }
 
+    const handleSubmit = (e) =>{
+        e.preventDefault()
+        console.log('envio de form' + name + number)
+    }
+
     return(
         <div>
-            <form action="">
+            <form action="" onSubmit={handleSubmit}>
                 <label htmlFor="name">Nome</label>
                 <input type="text" name="name" placeholder="digite seu nome"onChange={(e)=>setName(e.target.value)}/>
                 <br></br>
