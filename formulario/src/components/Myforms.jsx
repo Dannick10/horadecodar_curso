@@ -10,9 +10,9 @@ const MyForms = () =>{
     const handleName = (e)=>{
       setName(e.target.value)
     }
-
+    console.log(mall)
     console.log(name)
-    
+
     return(
         <div>
                 {/*Criaçao de form*/ }
@@ -25,7 +25,7 @@ const MyForms = () =>{
                 {/*label envolvendo input*/}
                 <label htmlFor="email">
                     <span>E-mall</span>
-                    <input type="email" name="email" placeholder='digite o seu email' />
+                    <input type="email" name="email" placeholder='digite o seu email' onChange={(e)=>{setMall(e.target.value)}} />
                 </label>
                     <input type="submit" value="Enviar" />
                 </form>
