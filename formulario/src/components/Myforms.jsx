@@ -7,6 +7,9 @@ const MyForms = ({user}) =>{
     //3 geraciar dados
     const [name,setName] = useState(user ? user.name : '')
     const [mall,setMall] = useState(user ? user.email : '')
+    const [endereco,setendereco] = useState(user ? user.ender : '')
+    
+    //7 limpar 
 
     const handleName = (e)=>{
       setName(e.target.value)
@@ -15,9 +18,15 @@ const MyForms = ({user}) =>{
     const handleSubmit = (event) =>{
         event.preventDefault()
         console.log('enviando o form')
-        console.log(name,mall)
+        console.log(name,mall,endereco)
+        setName('')
+        setMall('')
+        setendereco('')
     }
 
+    const handleendereco = (e) =>{
+        setendereco(e.target.value)
+    }
     console.log(mall)
     console.log(name)
 
@@ -36,6 +45,18 @@ const MyForms = ({user}) =>{
                         value={name}
                         />
                     </div>
+
+                    <form>
+                        <div>
+                            <label htmlFor="endereco">Endereço</label>
+                        </div>
+                        <input type="text"
+                        name='endereco'
+                        placeholder='Digite o endereço'
+                        onChange={handleendereco}
+                        value={endereco} />
+                      
+                    </form>
 
                 {/*label envolvendo input*/}
                 <label htmlFor="email">
