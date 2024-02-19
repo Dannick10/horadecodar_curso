@@ -8,8 +8,8 @@ const MyForms = ({user}) =>{
     const [name,setName] = useState(user ? user.name : '')
     const [mall,setMall] = useState(user ? user.email : '')
     const [endereco,setendereco] = useState(user ? user.ender : '')
-    const [bio,setBio] =useState('')
-    
+    const [bio,setBio] =useState(user ? user.bio : '')
+    const [role,setRole] =useState(user ? user.role : '')
     //7 limpar 
 
     const handleBio = (e) =>{
@@ -22,7 +22,7 @@ const MyForms = ({user}) =>{
 
     const handleSubmit = (event) =>{
         event.preventDefault()
-        console.log(name,mall,endereco,bio)
+        console.log(name,mall,endereco,bio,role)
         setBio('')
         setName('')
         setMall('')
@@ -77,6 +77,18 @@ const MyForms = ({user}) =>{
                         <span>BIO:</span>
                         <textarea name="bio" placeholder='descricao do usuario' cols="30" rows="10" value={bio} onChange={handleBio}></textarea>
                         </label>
+
+
+                    <label>
+                        <span>Funcao</span>
+                        <select name="role" onChange={(e)=>setRole(e.target.value)} value={role}>
+                            <option value="user">usuario</option>
+                            <option value="editor">editor</option>
+                            <option value="adm">administrador</option>
+                        </select>
+                    </label>
+
+
                 </label>
                     <input type="submit" value="Enviar" />
                 </form>
