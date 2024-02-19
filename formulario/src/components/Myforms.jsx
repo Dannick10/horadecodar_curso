@@ -8,8 +8,13 @@ const MyForms = ({user}) =>{
     const [name,setName] = useState(user ? user.name : '')
     const [mall,setMall] = useState(user ? user.email : '')
     const [endereco,setendereco] = useState(user ? user.ender : '')
+    const [bio,setBio] =useState('')
     
     //7 limpar 
+
+    const handleBio = (e) =>{
+        setBio(e.target.value)
+    }
 
     const handleName = (e)=>{
       setName(e.target.value)
@@ -17,8 +22,8 @@ const MyForms = ({user}) =>{
 
     const handleSubmit = (event) =>{
         event.preventDefault()
-        console.log('enviando o form')
-        console.log(name,mall,endereco)
+        console.log(name,mall,endereco,bio)
+        setBio('')
         setName('')
         setMall('')
         setendereco('')
@@ -55,7 +60,6 @@ const MyForms = ({user}) =>{
                         placeholder='Digite o endereço'
                         onChange={handleendereco}
                         value={endereco} />
-                      
                     </form>
 
                 {/*label envolvendo input*/}
@@ -66,12 +70,18 @@ const MyForms = ({user}) =>{
                     type="email" 
                     name="email" 
                     placeholder='digite o seu email' 
-                    onChange={(e)=>{setMall(e.target.value)}}
+                    onChange={(e)=>{e.target.value}}
                     value={mall} />
+                            
+                        <label htmlFor="bio">
+                        <span>BIO:</span>
+                        <textarea name="bio" placeholder='descricao do usuario' cols="30" rows="10" value={bio} onChange={handleBio}></textarea>
+                        </label>
                 </label>
                     <input type="submit" value="Enviar" />
                 </form>
-
+               
+         
         </div>
     )
 }
