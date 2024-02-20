@@ -3,7 +3,7 @@ import './App.css'
 
 
 //react
-import { useCallback, useEffect, useState } from 'react'
+import { startTransition, useCallback, useEffect, useState } from 'react'
 
 //componetnts
 import StartScreen from './components/StartScreen'
@@ -19,18 +19,35 @@ const stages = [
   {id: 3, name: 'end'}
 ]
 
-function App() {
 
+function App() {
+  
   const [gameStage, setGameStage] = useState(stages[0].name)
   const [words] = useState(wordsList)
 
-  console.log(words)
 
+
+//starts screts word game
+  const StartGame = () =>{
+    setGameStage(stages[1].name)
+  }
+
+  //process the letter i nput 
+  const verifyletter = () =>{
+    setGameStage(stages[2].name)
+  }
+
+  //retry
+
+  const retry = () =>{
+    setGameStage(stages[0].name)
+  }
+  
   return (
     <>
-     {gameStage === 'start' && <StartScreen/>}
-     {gameStage === 'game' && <Game/>}  
-     {gameStage === 'end' && <Over/>}  
+     {gameStage === 'start' && <StartScreen StartGame={StartGame}/>}
+     {gameStage === 'game' && <Game verifyletter={verifyletter}/>}  
+     {gameStage === 'end' && <Over retry={retry}/>}  
      
      </>
   )
