@@ -25,10 +25,44 @@ function App() {
   const [gameStage, setGameStage] = useState(stages[0].name)
   const [words] = useState(wordsList)
 
+  const [pickeWord, setPickedWord] = useState('')
+  const [pickedCategory, setPickedCategory] = useState('')
+  const [letters, setLetters] = useState('')
 
+  const PickWorldAndCategory = () =>{
+
+    //random category
+    const categories = Object.keys(words)
+    const category = categories[Math.floor(Math.random() * Object.keys(categories).length)]
+
+    const word = words[category][Math.floor(Math.random() * words[category].length)]
+
+    return {word, category}
+
+  }
 
 //starts screts word game
   const StartGame = () =>{
+
+    const {word, category} = PickWorldAndCategory()
+
+    //create array of letters 
+
+    let wordLetter = word.split('')
+    wordLetter.map((l)=>l.toLowerCase())
+    console.log(wordLetter)
+
+    console.log(word,category)
+      
+      //fil states
+      setPickedWord(word)
+      setPickedCategory(category)
+      setLetters(wordLetter)
+
+      console.log(pickeWord)
+      console.log(pickedCategory)
+      console.log(wordLetter)
+
     setGameStage(stages[1].name)
   }
 
