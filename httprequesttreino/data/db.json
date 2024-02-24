@@ -1,0 +1,28 @@
+{
+    "filmes": [
+      {
+        "id": 1,
+        "title": "À Deriva",
+        "description": "Em uma das histórias mais verdadeiras da Segunda Guerra Mundial, três pilotos da marinha norte-americana colidem seus aviões no Pacífico Sul. Em um bote salva-vidas no meio do mar aberto eles ficam sem alimento e água, além de não terem a mínima esperança de serem resgatados. Navegando por mais de 1.600 quilômetros, eles enfrentam tempestades, tubarões, a fome e a convivência.",
+        "category": ["Nudez", "Linguagem imprópria"],
+        "ano": 2015,
+        "minutes": 99
+      },
+      {
+        "id": 2,
+        "title": "Ultraman X - O Filme",
+        "description": "Ao invadir uma pirâmide misteriosa, o apresentador Carlos Kurozaki remove uma joia especial e libera o poderoso monstro Zaigorg, que deseja roubar a gema de Kurozaki. Cabe aos super-heróis Ultraman X e Ultraman Tiga detê-lo.",
+        "category": ["Ação", "Aventura", "Fantasia"],
+        "ano": 2016,
+        "minutes": 71
+      },
+      {
+        "id": 3,
+        "title": "O Vigilante Mascarado",
+        "description": "Ao invadir uma pirâmide misteriosa, o apresentador Carlos Kurozaki remove uma joia especial e libera o poderoso monstro Zaigorg, que deseja roubar a gema de Kurozaki. Cabe aos super-heróis Ultraman X e Ultraman Tiga detê-lo.",
+        "category": ["Ação", "Biografia", "Drama", "policial"],
+        "ano": 2016,
+        "minutes": 104
+      }
+    ]
+  }
