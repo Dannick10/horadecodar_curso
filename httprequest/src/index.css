@@ -54,15 +54,25 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+.produtos{
+  background-color: #535bf2;
+  display: flex;
+  justify-content: space-around;
+  width: 50em;
+}
+
+.pr{
+  background-color: #434569;
+  height: 5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.pr li{
+  list-style: none;
+}
+
+.produtos ul:not(ul li){
+  font-size: 1.3em;
 }
