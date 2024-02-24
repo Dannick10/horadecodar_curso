@@ -40,7 +40,12 @@ function App() {
     return {word, category}
 
   }
-
+  
+  
+      const [guessedLetters, setGuessedLetters] = useState([])
+      const [wrongLetters, setWrongLetters] = useState([])
+      const [guesses,setGuesses] = useState(3)
+      const [score,setScore] = useState(0)
 //starts screts word game
   const StartGame = () =>{
 
@@ -48,20 +53,20 @@ function App() {
 
     //create array of letters 
 
-    let wordLetter = word.split('')
-    wordLetter.map((l)=>l.toLowerCase())
-    console.log(wordLetter)
+    let wordLetters = word.split('')
+    wordLetters.map((l)=>l.toLowerCase())
+    console.log(wordLetters)
 
     console.log(word,category)
       
       //fil states
       setPickedWord(word)
       setPickedCategory(category)
-      setLetters(wordLetter)
+      setLetters(wordLetters)
 
       console.log(pickeWord)
       console.log(pickedCategory)
-      console.log(wordLetter)
+      console.log(wordLetters)
 
     setGameStage(stages[1].name)
   }
@@ -80,7 +85,16 @@ function App() {
   return (
     <>
      {gameStage === 'start' && <StartScreen StartGame={StartGame}/>}
-     {gameStage === 'game' && <Game verifyletter={verifyletter}/>}  
+     {gameStage === 'game' && <Game
+      verifyletter={verifyletter}
+      pickeWord={pickeWord}
+      pickedCategory={pickedCategory}
+      letters={letters}
+      guessedLetters={guessedLetters}
+      wrongLetters={wrongLetters}
+      guesses={guesses}
+      score={score}
+      />}  
      {gameStage === 'end' && <Over retry={retry}/>}  
      
      </>

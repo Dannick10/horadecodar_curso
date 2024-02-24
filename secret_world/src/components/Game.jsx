@@ -1,15 +1,17 @@
 
 
-function Game({verifyletter}) {
+const Game = ({verifyletter,pickeWord,pickedCategory,letters,guessedLetters,wrongLetters,guesses,score,}) => {
   return (
     <div>
            <p className="points">
-            <span>Pontuação: 0</span>
+            <span>Pontuação: {score}</span>
            </p>
-           <h1>Adivinhe a palavra:</h1>
-           <h3 className="tip">Dica sobrea a palavra: <span>dica</span></h3>
+           <h1>Adivinhe a palavra</h1>
+           <h3 className="tip">Dica sobrea a palavra: <span>{pickedCategory}</span></h3>
            <div className="wordContainer">
-            <span className="letter">A</span>
+
+              {letters.map((letters,i)=>(
+                guessedLetters.includes(letters)?(<span className="blockcode" key={i}></span>):(<span className="blockcode"  key={i}></span>)))}
             <span className="blankSquare"></span>
            </div>
 
@@ -22,8 +24,7 @@ function Game({verifyletter}) {
            </div>
           <div className="wrongLetterContainer">
             <p>Letras já utilizadas</p>
-            <span>a,</span>
-            <span>b,</span>
+            {wrongLetters.map((letter,i)=>(<span key={1}>{wrongLetters}</span>))}
           </div>
      </div>
   )

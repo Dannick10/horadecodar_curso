@@ -55,10 +55,21 @@ button:focus-visible {
 
 }
 
-.letter{
+.wordContainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.letter,.blockcode{
   border: 2px solid white;
-  padding: 10px;
+  padding: 15px 10px;
+  text-align: center;
+  height: 1em;
   background-color: #1a1a1a;
   border-radius: 2px;
   font-size: 2em;
+  width: 1em;
+
 }
