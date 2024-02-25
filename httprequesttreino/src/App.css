@@ -29,22 +29,26 @@ main{
 }
 
 .film{
-  width: 30em;
-  height: 30em;
+  padding: 50px 80px;
+  text-align: justify;
+  margin: 20px;
   font-size: 1.2em;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  gap: 20px;
   align-items: center;
-  background-color: rgb(15, 13, 13);
+  border: 2px solid white;
 }
 
 .film .img{
-  width: 10em;
+  width: 55vw;
 }
 
 img{
   width: 100%;
+  height: 30vw;
+  object-fit: cover;
 }
 
 .title{

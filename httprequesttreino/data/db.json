@@ -1,28 +1,31 @@
 {
-    "filmes": [
-      {
-        "id": 1,
-        "title": "À Deriva",
-        "description": "Em uma das histórias mais verdadeiras da Segunda Guerra Mundial, três pilotos da marinha norte-americana colidem seus aviões no Pacífico Sul. Em um bote salva-vidas no meio do mar aberto eles ficam sem alimento e água, além de não terem a mínima esperança de serem resgatados. Navegando por mais de 1.600 quilômetros, eles enfrentam tempestades, tubarões, a fome e a convivência.",
-        "category": ["Nudez", "Linguagem imprópria"],
-        "ano": 2015,
-        "minutes": 99
-      },
-      {
-        "id": 2,
-        "title": "Ultraman X - O Filme",
-        "description": "Ao invadir uma pirâmide misteriosa, o apresentador Carlos Kurozaki remove uma joia especial e libera o poderoso monstro Zaigorg, que deseja roubar a gema de Kurozaki. Cabe aos super-heróis Ultraman X e Ultraman Tiga detê-lo.",
-        "category": ["Ação", "Aventura", "Fantasia"],
-        "ano": 2016,
-        "minutes": 71
-      },
-      {
-        "id": 3,
-        "title": "O Vigilante Mascarado",
-        "description": "Ao invadir uma pirâmide misteriosa, o apresentador Carlos Kurozaki remove uma joia especial e libera o poderoso monstro Zaigorg, que deseja roubar a gema de Kurozaki. Cabe aos super-heróis Ultraman X e Ultraman Tiga detê-lo.",
-        "category": ["Ação", "Biografia", "Drama", "policial"],
-        "ano": 2016,
-        "minutes": 104
-      }
-    ]
-  }
+  "filmes": [
+    {
+      "id": "7179",
+      "title": "Meu Amigo Ninja",
+      "img": "https://ottvsimg.ottvs.com.br/ban/gmt.245048/looke_4001.jpg?1298382700",
+      "description": "Aske é um garoto normal da sétima série que quer apenas uma vida pacífica, sem ser incomodado pelos obstáculos que enfrenta diariamente. Ele tem uma queda por uma garota chamada Jessica, que está um grau acima dele. Seu melhor amigo nerd é Oddyseus, e está sendo intimidado por um garoto que frequenta uma aula de educação especial chamada Glenn. Aske tem um relacionamento tenso com seu padrasto Jørn e seu meio-irmão Sune. A vida de Aske vira de cabeça para baixo quando ele ganha uma boneca ninja como presente de seu 13º aniversário do tio Stewart, que estava de férias na Tailândia antes. Ele logo descobre que a boneca ninja estava possuída por um espírito pertencente a um samurai japonês chamado Taiko Nakamura que cometeu suicídio ritual 'seppuku' para salvar a humanidade do mal. A boneca se junta a Aske para vingar a morte de um empresário dinamarquês chamado Phillip Eberfrø, que espancou um menino pobre até a morte em uma fábrica exploradora na Tailândia. Isso coloca Aske e sua nova amizade com esta boneca à prova, preparando-se para uma aventura que Aske nunca tinha estado antes.",
+      "category": "AnimaçãoAçãoAventura",
+      "minutes": "80 ",
+      "ano": "2019",
+      "link": "https://www.netmovies.com.br/player/meu-amigo-ninja/245048"
+    },
+    {
+      "id": "f5ac",
+      "title": " Ultraman Zero - O Filme",
+      "img": "https://ottvsimg.ottvs.com.br/ban/idg.129747/looke_4001.jpg?152170972",
+      "description": "Quando Menacing Belial ressurge com um exército de poderosos combatentes, em outro plano para dominar a galáxia, Ultraman Zero forma um grande grupo para derrotá-lo novamente.",
+      "category": "Ficção CientíficaAção",
+      "minutes": "99",
+      "ano": "2010",
+      "link": "https://www.netmovies.com.br/player/ultraman-zero-o-filme/129747"
+    },
+    {
+      "id": "fef7",
+      "title": "gato de botas 2 o ultimo pedido",
+      "img": "https://image.tmdb.org/t/p/original/ouB7hwclG7QI3INoYJHaZL4vOaa.jpg",
+      "description": "O Gato de Botas descobre que sua paixão pela aventura cobrou seu preço: ele queimou oito de suas nove vidas, deixando-o com apenas uma vida restante. Gato parte em uma jornada épica para encontrar o mítico Último Desejo e restaurar suas nove vidas.",
+      "link": "https://campaign.lexierads.com/?vr=526E544B73584D624F6E6C51472B455A484C7161657477304E616F4E39656E6436694D4A4A6B746B366237626163794C7750414430724836463142752F457171524264307448346E3566613331364F2F6C5073645734794B7A746C70507044315278742B674E51554774624F56374A614C593630497546686F53694A51425A494144776338686C502F304666794143506272354A3351746C4353637231476F647245333176555739454C4D624765767959337153382B4D365947346C6A6B753234664B4575334244336137515A436F4A433246536252325042334E6B693734384248646130563857376A4477505A556147474834613368594B61437A322F4A444B6C5A3749742B3474716D7643424E5A38654B414D3876614677452B57507245474A2F444647645A4638616646526C4C3863326F4E346E3971625071366F42765043557056776A784933674D737A51763176616F6D31612B453851734D45566678375954396677356B6A6979734A6B33753950624A712F39394E397A655059796E2B342B4E45536B336F4D4E4C7170354744475870413D3D&kb=3763373635646238366338656437376535303335313931363134376362653236&z=30326638613261303661313066313631"
+    }
+  ]
+}
