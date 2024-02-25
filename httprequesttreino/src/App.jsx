@@ -53,7 +53,7 @@ function App() {
   return (
     <>
     <header>
-      <span>MYFILMS</span>
+      <span>Danyflix</span>
       <ul>
         <li>Inicio</li>
         <li>Categorias</li>

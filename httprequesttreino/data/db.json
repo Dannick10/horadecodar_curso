@@ -1,31 +1,24 @@
 {
   "filmes": [
     {
-      "id": "7179",
-      "title": "Meu Amigo Ninja",
-      "img": "https://ottvsimg.ottvs.com.br/ban/gmt.245048/looke_4001.jpg?1298382700",
-      "description": "Aske é um garoto normal da sétima série que quer apenas uma vida pacífica, sem ser incomodado pelos obstáculos que enfrenta diariamente. Ele tem uma queda por uma garota chamada Jessica, que está um grau acima dele. Seu melhor amigo nerd é Oddyseus, e está sendo intimidado por um garoto que frequenta uma aula de educação especial chamada Glenn. Aske tem um relacionamento tenso com seu padrasto Jørn e seu meio-irmão Sune. A vida de Aske vira de cabeça para baixo quando ele ganha uma boneca ninja como presente de seu 13º aniversário do tio Stewart, que estava de férias na Tailândia antes. Ele logo descobre que a boneca ninja estava possuída por um espírito pertencente a um samurai japonês chamado Taiko Nakamura que cometeu suicídio ritual 'seppuku' para salvar a humanidade do mal. A boneca se junta a Aske para vingar a morte de um empresário dinamarquês chamado Phillip Eberfrø, que espancou um menino pobre até a morte em uma fábrica exploradora na Tailândia. Isso coloca Aske e sua nova amizade com esta boneca à prova, preparando-se para uma aventura que Aske nunca tinha estado antes.",
-      "category": "AnimaçãoAçãoAventura",
-      "minutes": "80 ",
-      "ano": "2019",
-      "link": "https://www.netmovies.com.br/player/meu-amigo-ninja/245048"
+      "id": "d6ee",
+      "title": "Oppenheimer",
+      "img": "https://image.tmdb.org/t/p/original/fm6KqXpk3M2HVveHwCrBSSBaO0V.jpg)",
+      "description": "A história do físico americano Julius Robert Oppenheimer e seu papel no Projeto Manhattan e no desenvolvimento da bomba atômica durante a Segunda Guerra Mundial.",
+      "category": "Drama História Lançamentos",
+      "minutes": " 3h, 1min",
+      "ano": "2023",
+      "link": "https://analytics.lexierads.com/?vr=586E64496F73776A3336424A385479377A4D43787865416959684E65595966444237494163796456636D69725A493659496E43535A6E44675371685A497477457163334A6C69305A51564556306951316237572B326446445A3966334C315868676563576D61414277445854417666504D44583031414678534E3854634B65527A3269596A33557258724E747974797752397234384F656E344B433054716F6D3377506F5A55376763727A31353941306A3238336B6D2B5A7830656D48616E7372704D716347506D5A6F716C6A496769326A6C65464F766854344F657942675A2B54733678706A383253627247492F6A7642506F655166416D4C2F2B37386C70437352585778556E6172484169506D6E4133337834414F56717930443553687064516C686A6F544D6B625253326D47412F314D2F6D676E47424171797A394F2B6564343459654D36382B526637546278425569785472665250463334664630306C477138743730374943692F682B6470352F6C3659536F306255687145434C5871467748632B63694E6F6C543674746F4C4E713933413D3D&kb=6132366632333437376432393034373233323262383131633463653463373736&z=30663434363066386330353531363164"
     },
     {
-      "id": "f5ac",
-      "title": " Ultraman Zero - O Filme",
-      "img": "https://ottvsimg.ottvs.com.br/ban/idg.129747/looke_4001.jpg?152170972",
-      "description": "Quando Menacing Belial ressurge com um exército de poderosos combatentes, em outro plano para dominar a galáxia, Ultraman Zero forma um grande grupo para derrotá-lo novamente.",
-      "category": "Ficção CientíficaAção",
-      "minutes": "99",
-      "ano": "2010",
-      "link": "https://www.netmovies.com.br/player/ultraman-zero-o-filme/129747"
-    },
-    {
-      "id": "fef7",
-      "title": "gato de botas 2 o ultimo pedido",
-      "img": "https://image.tmdb.org/t/p/original/ouB7hwclG7QI3INoYJHaZL4vOaa.jpg",
-      "description": "O Gato de Botas descobre que sua paixão pela aventura cobrou seu preço: ele queimou oito de suas nove vidas, deixando-o com apenas uma vida restante. Gato parte em uma jornada épica para encontrar o mítico Último Desejo e restaurar suas nove vidas.",
-      "link": "https://campaign.lexierads.com/?vr=526E544B73584D624F6E6C51472B455A484C7161657477304E616F4E39656E6436694D4A4A6B746B366237626163794C7750414430724836463142752F457171524264307448346E3566613331364F2F6C5073645734794B7A746C70507044315278742B674E51554774624F56374A614C593630497546686F53694A51425A494144776338686C502F304666794143506272354A3351746C4353637231476F647245333176555739454C4D624765767959337153382B4D365947346C6A6B753234664B4575334244336137515A436F4A433246536252325042334E6B693734384248646130563857376A4477505A556147474834613368594B61437A322F4A444B6C5A3749742B3474716D7643424E5A38654B414D3876614677452B57507245474A2F444647645A4638616646526C4C3863326F4E346E3971625071366F42765043557056776A784933674D737A51763176616F6D31612B453851734D45566678375954396677356B6A6979734A6B33753950624A712F39394E397A655059796E2B342B4E45536B336F4D4E4C7170354744475870413D3D&kb=3763373635646238366338656437376535303335313931363134376362653236&z=30326638613261303661313066313631"
+      "id": "e9ea",
+      "title": "Homem-Aranha: Através do aranhaverso ",
+      "img": "https://image.tmdb.org/t/p/original/4HodYYKEIsGOdinkGi2Ucz6X9i0.jpg",
+      "description": "Miles Morales retorna para o próximo capítulo da saga do Aranhaverso, uma aventura épica que transportará o Homem-Aranha em tempo integral e amigável do bairro do Brooklyn através do Multiverso para unir forças com Gwen Stacy e uma nova equipe de Homens-Aranha para enfrentar com um vilão mais poderoso do que qualquer coisa que eles já encontraram.",
+      "category": "Ação Animação Aventura Ficção científica Lançamentos",
+      "minutes": "2h, 20min",
+      "ano": "2023",
+      "link": "https://campaign.lexierads.com/?vr=47577A5658794D3861416877766B33416754484145336A55466665686F4D656A3137435154686A2F474C70726449572B77697944563639426E6337574D72367865524D7074467538765343414B654442694E6C5959664844667251534E574476304656757969617834796767796363703641732F6D644541435671467563592B796F6D3563664B446274627A7170456547585A36654E784B3264386179654A316E52587430747A6E59394A675A4738677050496C6166342B6162554332716D516A5235337252556F4367366A6E456130533567554C462F694632375057503767537952564470515A4246506439576939616B754F6137722F535165522F4E643441365031715136414D2F6D625652703977526B502F344F634D334C49535652425A31726558316168432F6B507446795578543151524D74535077686748473848674465644A4D624F574E5978686D5A366B794277657930777351694E6558543573576851424139787434577254545142414963782F716B4D553965516473466E50656868757A7543527A484C4A5659304771315872773D3D&kb=3633623537306137303333643064383732643237626134353162623262383332&z=66333333653238393563336530643731"
     }
   ]
 }
