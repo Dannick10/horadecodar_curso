@@ -25,7 +25,7 @@ function App() {
 
 
   const handleSubmit = async(e)=>{
-
+    e.preventDefault()
 
     const productset = {
       name,
@@ -35,11 +35,19 @@ function App() {
     const res = await fetch(url,{
       method: "POST",
       headers: {
-        "Content-Type": "application/jason"
+        "Content-Type": "application/json"
       },
       body: JSON.stringify(productset)
     })
 
+    // carregamento dinamico
+
+    const addProduct = await res.json()
+
+    setProdutos((prevprodutos) => [...produtos,addProduct])
+
+    setName("")
+    setPrice("")
   }
 
   
