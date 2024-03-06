@@ -4,6 +4,26 @@ export const useFetch =  (url) =>{
 
     const [data,setData] = useState(null)
 
+    // refatorando 
+
+    const [config,Setconfig] = useState(null)
+    const [method, Setmethod] = useState(null)
+    const [callFetch, SetcallFetch] = useState(false)
+
+    const httpConfig = (data, method) => {
+        if(method === "POST"){
+            Setconfig({
+                method,
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(data)
+        })
+        Setmethod(method)
+        }
+       
+    }
+
     useEffect(()=>{
 
         const fetchData = async () => {
@@ -17,8 +37,28 @@ export const useFetch =  (url) =>{
 
         fetchData()
 
-    },[url])
+    },[url, callFetch])
 
-    return {data}
+    useEffect(() => {
+    const httpRequest =  async () => {
+        if(method === "POST"){
+            
+            let fetchOptions = [...config]
+
+            const res = await fetch(...fetchOptions)
+            const json = await res.json()
+
+            SetcallFetch(json)
+
+        }
+
+    }
+
+    httpRequest()
+
+    },[config,method,url])
+    
+
+    return {data,config}
 
 }
