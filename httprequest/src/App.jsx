@@ -15,7 +15,7 @@ function App() {
 
   //4 custom hook
 
-      const {data:items, httpConfig} = useFetch(url)
+      const {data:items, httpConfig, loading} = useFetch(url)
       console.log(items)
   /*
   useEffect(()=>{
@@ -39,7 +39,6 @@ function App() {
       price
     }
 
-    /*
     const res = await fetch(url,{
       method: "POST",
       headers: {
@@ -47,12 +46,10 @@ function App() {
       },
       body: JSON.stringify(productset)
     })
-        */
-
 
     // carregamento dinamico0
-
-    httpConfig(productset,"POST")
+    const addProduct = productset
+    setProdutos((prevproductset)=> [...prevproductset,addProduct])
 
     setName("")
     setPrice("")
@@ -63,6 +60,8 @@ function App() {
     <>
       <div className="app">
         <h1>Lista de produtos</h1>
+        {loading && <p>Loading</p>}
+        {!loading && (
         <div className="produtos">
           {items && items.map((p)=>(
             <ul className='pr'>
@@ -71,6 +70,7 @@ function App() {
             </ul>
           ))}
         </div>
+        )}
 
         <div className="addProduct">
             <form onSubmit={handleSubmit}>
