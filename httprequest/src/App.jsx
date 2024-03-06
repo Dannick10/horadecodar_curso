@@ -82,7 +82,10 @@ function App() {
                 preço
                 <input type="number" name="price" value={price} onChange={(e)=>setPrice(e.target.value)} />
               </label>
-              <input type="submit" value="Enviar" />
+              {/*7 state de loading no post*/}
+
+              {!loading && <input type="submit" value="Enviar" />}
+              
             </form>
         </div>
       </div>
