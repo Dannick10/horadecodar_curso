@@ -45,7 +45,7 @@ export const useFetch =  (url) =>{
     const httpRequest =  async () => {
         if(method === "POST"){
             
-            let fetchOptions = [...config]
+            let fetchOptions = [url,config]
 
             const res = await fetch(...fetchOptions)
             const json = await res.json()
@@ -61,6 +61,6 @@ export const useFetch =  (url) =>{
     },[config,method,url])
     
 
-    return {data,config,loading}
+    return {data,httpConfig,loading}
 
 }

@@ -9,6 +9,21 @@
       "id": "97e7",
       "name": "a",
       "price": "4"
+    },
+    {
+      "id": "8ab5",
+      "name": "c",
+      "price": "3"
+    },
+    {
+      "id": "bb66",
+      "name": "sisso",
+      "price": "50"
+    },
+    {
+      "id": "3abe",
+      "name": "adicionar",
+      "price": "130"
     }
   ]
 }
