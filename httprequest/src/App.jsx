@@ -57,6 +57,10 @@ function App() {
     setPrice("")
   }
 
+    const handleRemove = (id) =>{
+      httpConfig(id, "DELETE")
+    }
+
   
   return (
     <>
@@ -70,6 +74,7 @@ function App() {
             <ul className='pr'>
             <li key={p.id}>Produtos:{p.name}</li>
             <li>Preço: {p.price}</li>
+            <button onClick={() => handleRemove(p.id)}>Remover</button>
             </ul>
           ))}
         </div>
