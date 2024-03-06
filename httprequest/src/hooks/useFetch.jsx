@@ -12,6 +12,8 @@ export const useFetch =  (url) =>{
 
     const [loading, setLoanding] = useState(false)
 
+    const [error,setError] = useState(null)
+
     const httpConfig = (data, method) => {
         if(method === "POST"){
             Setconfig({
@@ -28,12 +30,21 @@ export const useFetch =  (url) =>{
 
     useEffect(()=>{
         const fetchData = async () => {
+
             setLoanding(true)
 
+        try{
             const res = await fetch(url)
             const json = await res.json()
 
             setData(json)
+        }
+        catch(error){
+            console.log(erro.message)
+
+            setError(erro.message)
+        }
+
             setLoanding(false)
         }
 
@@ -61,6 +72,6 @@ export const useFetch =  (url) =>{
     },[config,method,url])
     
 
-    return {data,httpConfig,loading}
+    return {data,httpConfig,loading,error}
 
 }

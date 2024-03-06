@@ -15,7 +15,7 @@ function App() {
 
   //4 custom hook
 
-  const { data: items, httpConfig, loading,} = useFetch(url);
+  const { data: items, httpConfig, loading,error} = useFetch(url);
       console.log(items)
   /*
   useEffect(()=>{
@@ -62,8 +62,9 @@ function App() {
     <>
       <div className="app">
         <h1>Lista de produtos</h1>
-        {loading && <p>Loading</p>}
-        {!loading && (
+        {loading && <p>Loading...</p>}
+        {error && <p>{error}</p>}
+        {!error && (
         <div className="produtos">
           {items && items.map((p)=>(
             <ul className='pr'>
