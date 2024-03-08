@@ -12,6 +12,7 @@ function App() {
   const [idade,Setidade] = useState('')
   const [profissao,Setprofissao] = useState('')
 
+  
   useEffect(()=>{
   
     async function personFetch(){
