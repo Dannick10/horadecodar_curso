@@ -1,4 +1,4 @@
-
+import { Link } from 'react-router-dom'
 import {useFetch} from '../hooks/useFetch'
 
 
@@ -20,6 +20,7 @@ const home = () => {
           <>
             <li>{item.name}</li>
             <li>{item.price}</li>      
+            <Link to={`/products/${item.id}`}>Detalhes</Link>
           </>
         ))}
       </ul>
