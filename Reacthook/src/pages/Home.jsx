@@ -18,6 +18,7 @@ const home = () => {
       <ul>
         {items && items.map((item)=>(
           <>
+            <li>{item.id}</li>
             <li>{item.name}</li>
             <li>{item.price}</li>      
             <Link to={`/products/${item.id}`}>Detalhes</Link>

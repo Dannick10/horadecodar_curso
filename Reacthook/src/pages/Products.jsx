@@ -1,5 +1,6 @@
 import React from 'react'
 import { useParams } from "react-router-dom"
+import { Link } from 'react-router-dom'
 
 const Products = () => {
 
@@ -9,6 +10,7 @@ const Products = () => {
     <>
     <p>kk</p>
     <p>ID DO PRODUTO: {id}</p>
+    <Link to={`/products/${id}/info`}>Mais informações</Link>
     </>
   )
 }

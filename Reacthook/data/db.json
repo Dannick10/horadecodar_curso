@@ -3,6 +3,10 @@
       "id":"e23c",
       "name":"teclado",
       "price":"25"
+    },{
+      "id":"avc",
+      "name":"mouse",
+      "price":"43"
     }
   ]
 }
