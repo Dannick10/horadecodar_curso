@@ -25,7 +25,7 @@ nav{
   width: 100%;
   display: flex;
   position: fixed;
-  top: 5em;
+  top: 3em;
   justify-content: space-around;
   color: blue;
   background-color: white;
@@ -35,7 +35,7 @@ nav{
 body {
   margin: 0;
   display: flex;
-  place-items: center;
+  align-items: center;
   min-width: 320px;
   min-height: 100vh;
 }
@@ -64,3 +64,18 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+ul{
+  background-color: white;
+  color: black;
+  list-style: none;
+  width: 8em;
+}
+
+.contant{
+  border: 2px solid grey;
+  width: 800px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: .5em;
+  gap: .8em;
+}

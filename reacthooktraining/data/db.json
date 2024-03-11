@@ -1,0 +1,77 @@
+{
+    "Users": [
+      {
+        "id": "e23c",
+        "name": "Daniel",
+        "age": "25",
+        "career": "web developer",
+        "description": "Daniel is a 25-year-old web developer with a passion for creating innovative and user-friendly websites.",
+        "city": "Techville"
+      },
+      {
+        "id": "a45f",
+        "name": "Sophia",
+        "age": "28",
+        "career": "graphic designer",
+        "description": "Sophia, 28, is a talented graphic designer who brings creativity and style to every project she works on.",
+        "city": "Artropolis"
+      },
+      {
+        "id": "b12d",
+        "name": "Alex",
+        "age": "22",
+        "career": "software engineer",
+        "description": "Alex, 22, is a software engineer with a knack for problem-solving and a passion for cutting-edge technology.",
+        "city": "Codeburg"
+      },
+      {
+        "id": "c78h",
+        "name": "Emily",
+        "age": "30",
+        "career": "data scientist",
+        "description": "Emily, 30, is a data scientist who loves unraveling complex data sets to extract valuable insights.",
+        "city": "Datatown"
+      },
+      {
+        "id": "d34g",
+        "name": "Michael",
+        "age": "26",
+        "career": "mobile app developer",
+        "description": "Michael, 26, is a skilled mobile app developer who enjoys creating seamless and intuitive mobile experiences.",
+        "city": "Appsville"
+      },
+      {
+        "id": "f56i",
+        "name": "Olivia",
+        "age": "24",
+        "career": "UX/UI designer",
+        "description": "Olivia, 24, is a talented UX/UI designer dedicated to crafting visually appealing and user-centric digital interfaces.",
+        "city": "Designburg"
+      },
+      {
+        "id": "g78j",
+        "name": "Liam",
+        "age": "29",
+        "career": "network administrator",
+        "description": "Liam, 29, is a network administrator skilled in ensuring the smooth and secure operation of computer networks.",
+        "city": "Netville"
+      },
+      {
+        "id": "h90k",
+        "name": "Ava",
+        "age": "27",
+        "career": "game developer",
+        "description": "Ava, 27, is a game developer who brings virtual worlds to life with her coding and creative skills.",
+        "city": "Gameburg"
+      },
+      {
+        "id": "i23l",
+        "name": "William",
+        "age": "31",
+        "career": "software engineer",
+        "description": "William, 31, is a seasoned software engineer with a passion for building scalable and robust software solutions.",
+        "city": "Codeville"
+      }
+    ]
+  
+}
