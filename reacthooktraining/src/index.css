@@ -79,3 +79,10 @@ ul{
   padding: .5em;
   gap: .8em;
 }
+
+.active{
+  background-color: rgb(209, 95, 95);
+  padding: 0 1em;
+  color: black;
+  transition: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
