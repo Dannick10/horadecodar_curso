@@ -45,3 +45,8 @@ nav{
   display: flex;
   justify-content: space-around;
 }
+
+.active{
+  background-color: black;
+  color: rgb(207, 47, 47);
+}
