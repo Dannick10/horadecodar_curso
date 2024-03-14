@@ -3,7 +3,6 @@ import {useFetch} from '../hooks/useFetch'
 
 
 
-
 const home = () => {
   
   const url = "http://localhost:3000/products"
