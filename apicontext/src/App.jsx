@@ -1,6 +1,7 @@
 import './App.css'
 import { useContext } from 'react'
 import {CounterContext} from './Context/CounterContext'
+import ChangeCounter from './Components/ChangeCounte'
 
 function App() {
 
@@ -10,6 +11,7 @@ function App() {
     <>
      <h1>HOME</h1>
      <p>Valor do context {counter}</p>
+     <ChangeCounter/>
     </>
   )
 }
