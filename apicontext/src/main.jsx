@@ -7,7 +7,6 @@ import { CounterContextProvider } from './Context/CounterContext.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    {/*Criando provider*/}
     <CounterContextProvider>
     <App />
     </CounterContextProvider>

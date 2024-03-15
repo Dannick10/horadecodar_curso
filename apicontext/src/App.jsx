@@ -10,8 +10,8 @@ function App() {
   return (
     <>
      <h1>HOME</h1>
-     <p>Valor do context {counter}</p>
      <ChangeCounter/>
+     <p>Valor do context {counter}</p>
     </>
   )
 }
