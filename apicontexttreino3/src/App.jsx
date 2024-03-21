@@ -6,13 +6,23 @@ import CounterContextButton from './components/CounterContextButton'
 import { useColorChangeContext } from './hooks/useColorChangeContext'
 
 function App() {
+
+  
   const {counter} = useCounterContext()
-  const {color} = useColorChangeContext()
+  const {color, dispatch} = useColorChangeContext()
+  
+  const setTitleColor = (color) =>{
+    dispatch({type: color})
+  }
+  
   return (
     <>
     <h1 style={{color:color}}>COntext</h1>
     <CounterContextButton/>
+    <div><button onClick={()=>setTitleColor("RED")}>VERMELHO</button></div>
+    <div><button onClick={()=>setTitleColor("BLUE")}>BLUE</button></div>
     <p>Valor do contexto é {counter}</p>
+  
     </>
   )
 }
