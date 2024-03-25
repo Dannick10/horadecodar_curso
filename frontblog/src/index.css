@@ -55,6 +55,16 @@ input, textarea {
     background-color: transparent;
 }
 
+.register{
+text-align: center;
+margin: 1em 0;
+}
+
+.register p{
+    color: #aaa;
+    margin: 1em 0;
+}
+
 .btn{
     background-color: #1a8918;
     color: #fff;
@@ -103,4 +113,6 @@ button[disabled] {
     background-color: #F8D7DA;
     border: 1px solid #F5C6CB;
     border-radius: 5px;
+    margin: 1em 0;
+    padding: .3em 0;
 }
