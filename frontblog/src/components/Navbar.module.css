@@ -22,15 +22,17 @@
 
 .links_list {
     margin-right: 1em;
+    color: black;
 }
 
 .links_list li a {
     padding: .4em .6em;
     text-decoration: none;
-    color: black;
+  
 }
 
 .active {
     background-color: #000;
     color: white;
 }
+
