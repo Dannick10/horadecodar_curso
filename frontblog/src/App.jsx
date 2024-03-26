@@ -2,6 +2,8 @@
 import './App.css'
 
 import {BrowserRouter, Routes, Route, Navigate} from 'react-router-dom'
+import { AuthProvider } from './context/AuthContext'
+
 import Home from './pages/Home/Home'
 import About from './pages/About/About'
 import Login from './pages/Login/Login'
@@ -13,6 +15,7 @@ import Footer from './components/Footer'
 function App() {
   return (
     <>
+    <AuthProvider>
       <BrowserRouter>
         <Navbar/>
       <div className='container'>
@@ -25,6 +28,7 @@ function App() {
       </div>
         <Footer/>
       </BrowserRouter>
+    </AuthProvider>
 
     </>
   )
