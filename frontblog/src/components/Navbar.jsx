@@ -7,7 +7,7 @@ import styles from './Navbar.module.css'
 
 const Navbar = () => {
     const {logout} = useAuthentication()
-    const {user} = useAuthValue
+    const {user} = useAuthValue()
 
   return<nav className={styles.navbar}>
     <NavLink to="/"className={styles.brand}>

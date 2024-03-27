@@ -90,7 +90,7 @@ const Register = () => {
             </label>
             {!loading &&  <button className='btn'>Cadastrar</button>}
             {loading && <button className='btn' disabled>Aguarde</button>}
-                <p>{error && <p className='error'>A senha precisam ser iguais</p>}</p>
+                <p>{error && <p className='error'>{error}</p>}</p>
         </form>
     </div>
   )

@@ -68,14 +68,39 @@ export const useAuthentication = () => {
     useEffect(()=>{
         return () => SetCancelled(true)
     },[])
+    
+    //logi 
+    const login = async (data) => {
+        checkiFisCancelled()
+        SetLoading(true)
+        Seterror(false)
 
+        try{
+            await signInWithEmailAndPassword(auth, data.email,data.password)
+            SetLoading(false)
+        }catch{
+            let systemErrorMessage
+
+            if(error.message.includes("user-not-found")){
+                systemErrorMessage = 'Usuario não encontrado'
+            } else if(error.message.includes('wrong-password')){
+                systemErrorMessage = 'Senha incorreta'
+            } else {
+                systemErrorMessage = 'Ocorreu algum erro, volte mais tarde'
+            }
+
+            Seterror(systemErrorMessage)
+            SetLoading(false)
+        }
+    }
 
     return {
         auth,
         createUser,
         error,
         loading,
-        logout
+        logout,
+        login
     }
 
    }
