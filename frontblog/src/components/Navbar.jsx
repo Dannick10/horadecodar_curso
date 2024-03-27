@@ -19,7 +19,7 @@ const Navbar = () => {
         Home
     </NavLink>
         </li>
-        {!user && (
+        {user && (
          <>
         <li>
         <NavLink to="/login" className={({isActive}) => (isActive ? styles.active : '')}>
@@ -33,7 +33,7 @@ const Navbar = () => {
         </li>
          </>   
         )}
-        {user &&(
+        {!user &&(
             <>
             <li>
             <NavLink to="/posts/create" className={({isActive}) => (isActive ? styles.active : '')}>

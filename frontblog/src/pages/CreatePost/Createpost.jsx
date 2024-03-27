@@ -1,5 +1,5 @@
 import React from 'react'
-import style from './Createpost.module.css'
+import style from './CreatePost.module.css'
 
 const Createpost = () => {
   return (
