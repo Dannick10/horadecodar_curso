@@ -3,34 +3,52 @@ import styles from './Home.module.css'
 
 import {useNavigate, Link } from 'react-router-dom'
 import { useState } from 'react'
+import {useFetchDocuments} from '../../hooks/useFetchDocuments'
 
-const home = () => {
+import PostDetails from '../../components/PostDetails'
 
-  const [query, setQuery ] = useState('')
-  const [posts] = useState([])
-  const handleSubmit = (e) =>{
-    e.preventDefault()
-  }
+const Home = () => {
+  const { documents: posts, loading } = useFetchDocuments("posts");
+
+  const navigate = useNavigate();
+
+  const [query, setQuery] = useState("");
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    if (query) {
+      return navigate(`/search?q=${query}`);
+    }
+  };
+
+  console.log(loading);
 
   return (
     <div className={styles.home}>
-      <h1>Veja os nossos posts mais recenters</h1>
-      <form className={styles.search_forms} onSubmit={handleSubmit}>
-        <input type="text" placeholder='Ou busque por tags...' onChange={(e)=>setQuery(e.target.value)}/>
-        <button className='btn btn-dark'>Pesquisar</button>
+      <h1>Veja os nossos posts mais recentes</h1>
+      <form className={styles.search_form} onSubmit={handleSubmit}>
+        <input
+          type="text"
+          placeholder="Ou busque por tags..."
+          onChange={(e) => setQuery(e.target.value)}
+        />
+        <button className="btn btn-dark">Pesquisar</button>
       </form>
-      <div>
-        <h1>Posts...</h1>
-        {posts && posts.length === 0 &&(
-          <div className={StyleSheet.noposts}>
+      <div className="post-list">
+        {!loading && <p>Carregando...</p>}
+        {posts && posts.length === 0 && (
+          <div className={styles.noposts}>
             <p>Não foram encontrados posts</p>
-            <link to="/posts/create" className='btn'></link>
+            <Link to="/posts/create" className="btn">
+              Criar primeiro post
+            </Link>
           </div>
-  
         )}
+        {posts && posts.map((post) => <PostDetails key={post.id} post={post} />)}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default home
+export default Home;
