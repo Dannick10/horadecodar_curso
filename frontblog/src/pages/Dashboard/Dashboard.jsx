@@ -22,7 +22,7 @@ const Dashboard = () => {
   }
   //posts do usuario
   return (
-  <>
+  <div className={style.dashboard}>
     <h2>Dashboard</h2>
 
     <p>Gerencie os seus posts</p>
@@ -32,12 +32,12 @@ const Dashboard = () => {
       <Link to='/posts/create' className='btn'>Crie primeiro posts</Link>
    </div>):
    (<>
-   <div>
+   <div className={style.post_header}>
     <span>Titulo</span>
     <span>Açoes</span>
    </div>
 
-    {posts && posts.map((post) =>(<div key={post.id}>
+    {posts && posts.map((post) =>(<div key={post.id} className={style.post_row}>
       <p>{post.title}</p>
       <div>
         <Link to={`posts/${post.id}`} className='btn btn-outline'>Ver</Link>
@@ -50,7 +50,7 @@ const Dashboard = () => {
   ))}
    </>)}
 
-  </>
+  </div>
   )
 }
 

@@ -1,0 +1,46 @@
+.dashboard {
+    text-align: center;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.dashboard h2 {
+    font-size: 2.2em;
+    margin-bottom: .5em;
+}
+
+.dashboard p {
+    color: #aaa;
+    margin-bottom: .5em;
+}
+
+.noposts{
+    text-align: center;
+}
+
+.noposts p {
+    color: #aaa;
+    margin-bottom: .5em;
+}
+
+.noposts a {
+    padding: 10px 5px;
+}
+
+.post_header {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    border: 2px solid #aaa;
+    width: 80%;
+    padding: 10px;
+}
+
+.post_row{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    padding: 10px;
+}
