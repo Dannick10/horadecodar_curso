@@ -1,8 +1,12 @@
 import React from 'react'
+import HookUseState from '../Components/HookUseState'
 
 const Home = () => {
   return (
-    <div>Home</div>
+    <div>Home
+    <HookUseState/>
+  
+    </div>
   )
 }
 

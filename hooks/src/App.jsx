@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-import { BrowserRouter, Routes, Route, Link} from 'react-dom'
+import { BrowserRouter, Routes, Route, Link}  from "react-router-dom";
 
 import Home from './pages/Home'
 import About from './pages/About'
@@ -15,17 +15,17 @@ function App() {
     <>
     <h1>React Hooks</h1>
     <BrowserRouter>
-    <ul>
-      <li>
-        <Link to="/">Home</Link>
-      </li>
-      <li>
-        <Link to="/about">About</Link>
-      </li>
-    </ul>
+      <ul>
+        <li>
+          <Link to="/">Home</Link>
+        </li>
+        <li>
+          <Link to="/">Sobre</Link>
+        </li>
+      </ul>
       <Routes>
-       <route path="/" elment={<Home/>}/>
-       <route path="/about" elment={<About/>}/>
+        <Route path="/" element={<Home/>} />
+        <Route path="/about" element={<About/>} />
       </Routes>
     </BrowserRouter>
     </>

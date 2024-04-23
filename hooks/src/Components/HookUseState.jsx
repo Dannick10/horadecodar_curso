@@ -1,14 +1,24 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 
 const HookUseState = () => {
 
-    let useName = 'Joao'
-    const [name,setName] = useState('Joao')
+  let nome = 'Joao'
+  const [nomeState,SetnomeState] = useState('joao')
+
+  const handleName = () => {
+    nome = 'Daniel'
+    SetnomeState('Daniel')
+
+    console.log(`${nome}`)
+    console.log(`${nomeState}`)
+  }
+
   return (
     <div>
         <h2>usestate</h2>
-        <p>Var: {useName}</p>
-        <p>useState: {name} </p>
+        <p>Variavel: {nome}</p>
+        <p>useState: {nomeState}</p>
+        <button onClick={handleName}>Mudar</button>
         <hr />
     </div>
   )
