@@ -13,12 +13,19 @@ const HookuseEffect = () => {
         console.log('serei executado apenas uma vez')
     },[])
 
+    const [anotherNumber,SetAnotherNumber] = useState(0)
+
+    useEffect(()=> {
+        console.log('sou executado apenas com o anotherNumber muda!')
+    }, [anotherNumber])
+
   return (
     <div>
         <h2>UseEffect</h2>
         <p>number: {number}</p>
         <button onClick={changeSomething}>Executar</button>
-
+        <p>Another Number: {anotherNumber}</p>
+        <button onClick={() => SetAnotherNumber(anotherNumber + 1)}></button>
     </div>
   )
 }
