@@ -19,6 +19,16 @@ const HookuseEffect = () => {
         console.log('sou executado apenas com o anotherNumber muda!')
     }, [anotherNumber])
 
+    useEffect(()=> {
+        const time = setTimeout(() => {
+            console.log('HELLO WORLD')
+          
+        }, 2000)
+        
+       return () => clearTimeout(time)
+
+    }, [anotherNumber])
+
   return (
     <div>
         <h2>UseEffect</h2>
