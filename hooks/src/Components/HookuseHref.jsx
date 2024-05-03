@@ -11,6 +11,18 @@ const HookuseHref = () => {
         numberRef.current = numberRef.current + 1
     })
 
+    //useref dom 
+
+    const inputRef = useRef()
+    const [text,setText] = useState('')
+
+    const handleSubmit = ( e ) => {
+        e.preventDefault()
+        setText('')
+        console.log(inputRef)
+        inputRef.current.focus()
+    }
+
   return (
     <div>
 
@@ -24,7 +36,12 @@ const HookuseHref = () => {
 
             <p>CounterB: {counterB}</p>
             <button onClick={() => setCounterB(counterB + 1)}>Contador A</button>
+        <hr />
 
+    <form onSubmit={handleSubmit}>
+        <input type="text"  ref={inputRef} onChange={(e) => setText(e.target.value)} value={text}/>
+        <input type="submit"  value={"enviar"} />
+    </form>
     </div>
   )
 }
