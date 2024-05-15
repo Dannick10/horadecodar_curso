@@ -4,6 +4,7 @@ import HookUseReduce from '../Components/HookUseReduce'
 import HookuseEffect from '../Components/HookuseEffect'
 import HookuseHref from '../Components/HookuseHref'
 import HookuseCallback from '../Components/HookuseCallback'
+import HookuseMemo from '../Components/HookuseMemo'
 
 import { useContext } from 'react'
 import { SomeContext } from '../Components/HookuseContext'
@@ -20,6 +21,7 @@ const Home = () => {
     <p>{contextValue}</p>
     <HookuseHref/>
     <HookuseCallback/>
+    <HookuseMemo/>
     </div>
   )
 }
