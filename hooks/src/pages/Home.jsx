@@ -6,6 +6,7 @@ import HookuseHref from '../Components/HookuseHref'
 import HookuseCallback from '../Components/HookuseCallback'
 import HookuseMemo from '../Components/HookuseMemo'
 import HookuseLayoutEffect from '../Components/HookuseLayoutEffect'
+import HookuseimperativeHandle from '../Components/HookuseimperativeHandle'
 
 import { useContext } from 'react'
 import { SomeContext } from '../Components/HookuseContext'
@@ -24,6 +25,7 @@ const Home = () => {
     <HookuseCallback/>
     <HookuseMemo/>
     <HookuseLayoutEffect/>
+    <HookuseimperativeHandle/>
     </div>
   )
 }
