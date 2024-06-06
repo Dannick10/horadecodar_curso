@@ -82,5 +82,31 @@ const user = {
     }
 }
 
-user.sayUserName()
-user.seyuserNameARrow()
+//user.sayUserName()
+//user.seyuserNameARrow()
+
+const arr = [1, 2, 3, 4, 5]
+
+const highNumbers = arr.filter((n) => {
+    if( n >= 3) {
+        return n
+    }
+})
+
+console.log(arr)
+console.log(highNumbers)
+
+const users = [
+    {name: 'Daniel', avalible: true},
+    {name: 'Pedro', avalible: true},
+    {name: 'Matheus', avalible: false},
+    {name: 'Marcos', avalible: true},
+
+]
+
+const avalibleUsers = users.filter((user) => user.avalible)
+const notavaliableUsers = users.filter((user) => !user.avalible)
+
+console.log(users)
+console.log(avalibleUsers)
+console.log(notavaliableUsers)
