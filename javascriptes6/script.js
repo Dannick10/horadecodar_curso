@@ -110,3 +110,27 @@ const notavaliableUsers = users.filter((user) => !user.avalible)
 console.log(users)
 console.log(avalibleUsers)
 console.log(notavaliableUsers)
+
+
+// map 
+
+const products = [
+    {name: 'Camisa', Price: 10.99, category: 'Roupas'},
+    {name: 'chaleira eletrica', Price: 49.99, category: 'eletro'},
+    {name: 'fogão', Price: 400, category: 'electro'},
+    {name: 'calça jeans', Price: 10.99, category: 'Roupas'},
+]
+
+products.map((product) => {
+    if(product.category == 'Roupas'){
+        product.onsale = true
+    }
+})
+
+products.map((product) => {
+    if(product.onsale){
+        product.salePrice = product.Price + 10
+    }
+})
+
+console.log(products)
