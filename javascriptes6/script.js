@@ -141,3 +141,24 @@ const userName = 'Daniel'
 const age = 24
 
 console.log(`${userName} têm ${age}`)
+
+// destructing 
+
+const fruits = ['maça','laranja','mamão']
+
+const [f1, f2, f3] = fruits
+
+console.log(f1)
+console.log(f2)
+console.log(f3)
+
+const productDetails = {
+    name: 'placa',
+    price: 300.00,
+    category: 'periferico',
+    color: 'cinza'
+}
+
+const {name: productName, price, category, color} = productDetails
+
+console.log(`nome do produto ${productName}, preço do produto é ${price}, pertece a categoria ${category} e é da cor ${color}`)
